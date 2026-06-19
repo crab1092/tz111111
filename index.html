@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Search App</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        #content {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-height: 400px;
+            overflow: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Поиск страниц</h1>
+
+<input
+    id="keyword"
+    placeholder="Введите ключевое слово"
+/>
+
+<button id="searchBtn">
+    Поиск
+</button>
+
+<p id="status"></p>
+
+<h2>Найденные URL</h2>
+
+<ul id="urlList"></ul>
+
+<h2>Сохранённые страницы</h2>
+
+<ul id="savedPages"></ul>
+
+<div id="content"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
